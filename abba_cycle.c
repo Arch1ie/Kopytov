@@ -42,7 +42,7 @@ int Abba(int sample[8]) {
     for (int i = 0; i < 8; i++) {
         n = sample[i]; k = 0;
         for (int j = 7; j >= 0; j--) {
-            int x = (n >> j * 4) & 0x0000000F;
+            int x = (n >> j * 4) & 0x0000000F; 
             charMassive[i][k] = x < 10 ? x + '0' : x - 10 + 'A';
             k += 1;
         }
